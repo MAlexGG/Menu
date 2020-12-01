@@ -7,6 +7,7 @@
 
 body {
     background-color: #FAFAFA;
+    margin-left: 5%;
 }
 
 header {
@@ -29,6 +30,7 @@ header {
 .menu {
     border:none;
     background-color: transparent;
+    cursor: pointer;
 }
 
 .subButton {
@@ -53,10 +55,15 @@ p{
     background-color: white;
     box-shadow: ;
     margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
 .contenedorCategorias img {
-    width: 60px;
+    width: 80%;
     height: auto;
 }
 
@@ -64,4 +71,106 @@ p{
     color: black;
     font-size: 70%;
     font-weight: 500;
+}
+
+.infoPlatos {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 15px;
+}
+
+
+.infoPlatos img {
+    width: 118px;
+    height: 123px;
+    border-radius: 18px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.infoDetalle {
+    margin-left: 7%;
+}
+
+.infoDetalle p{
+    margin: 6px;
+}
+
+h4 {
+    margin: 4px;
+}
+
+.counter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-left: 6px;
+}
+.counter button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: white;
+    color: #C9CACE;
+    margin: 0px;
+    padding: 0px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.counterLeft {
+    border-radius: 2px 0px 0px 2px;
+}
+
+.counterRight {
+    border-radius: 0px 2px 2px 0px;
+}
+
+.counter p {
+    width: 30px;
+    height: 30px;
+    background-color: #F0F0F2;
+    color: black;
+    margin: 0px;
+    text-align: center;
+    line-height: 28px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+   height: 100px;
+   align-items: center;
+}
+
+.icoFooter {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content:center;
+    background-color: transparent;
+    border: none;
+}
+
+.icoFooter img {
+    width: 15px;
+    height: auto;
+}
+
+.icoSend {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border:none;
+    background-color: #FF6B00;
+    align-self: flex-start;
+}
+
+.icoSend img {
+    width: 30px;
+    height: auto;
+    -webkit-filter: invert();
 }

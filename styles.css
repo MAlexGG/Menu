@@ -15,8 +15,8 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    margin: 10px 0;
+    align-items: flex-end;
+    
 }
 
 .logo {
@@ -44,13 +44,20 @@ p{
 }
 
 h1 {
-    margin: 10px 0;
+   
+    padding-left: 5%;
+}
+.slogan {
+    padding-left: 5%;
 }
 
+nav {
+    padding-right: 5%;
+}
 .categorias {
     display: inline-block;
     width: 100vw;
-    height: 16vh;
+    height: 14vh;
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
@@ -102,7 +109,7 @@ h1 {
     width: auto;
     height: 60vh;
     overflow:  scroll;
-    margin: 12px;
+   
 }
 .platos::-webkit-scrollbar{
    display: none;
@@ -113,6 +120,7 @@ h1 {
     flex-direction: row;
     flex-wrap: nowrap;
     margin-bottom: 2vh;
+    padding-left: 5%;
 }
 
 
@@ -225,14 +233,16 @@ button{
         display: none;
     }
     h1 {
+        padding: 1%;
         text-align: center;
     }
     .slogan {
+        padding: 1%;
         text-align: center;
     }
     .categorias {
         width: auto;
-        height: 14.5vh;
+        height: 15vh;
     }
 
     .contenedorCategorias {
@@ -264,6 +274,7 @@ button{
 
     .platos {
         width: 100%;
+        height: 54vh;
     }
 
 
@@ -279,9 +290,23 @@ button{
     .counter button {
         width: 40px;
         height: 40px;
+        font-size: 1.5em;
     }
     .counter p {
         width: 40px;
         height: 40px;
+        line-height: 40px;
     }
+
+}
+
+@media screen and (min-width: 320px){
+
+
+.categorias{
+    height: 20vh;
+}
+
+
+
 }

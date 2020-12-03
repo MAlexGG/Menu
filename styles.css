@@ -50,12 +50,15 @@ h1 {
 .categorias {
     display: inline-block;
     width: 100vw;
-    height: 13vh;
+    height: 16vh;
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
-    scrollbar-width: none;
     padding: 10px 0;
+}
+.categorias::-webkit-scrollbar {
+  display: none;
+
 }
 
 .contenedorCategorias {
@@ -67,16 +70,19 @@ h1 {
     margin-right: 5px;
     margin-left: 5px;
     margin-top: 5px;
-    display: inline-block;
+    display: inline-grid;
     cursor: pointer;
     text-align: center;
+    
+    
     
 }
 
 .contenedorCategorias img {
     width: 80%;
     height: auto;
-    padding-top: 16%;
+    justify-self: center;
+    align-self: center;
 }
 
 .contenedorCategorias p {
@@ -97,6 +103,9 @@ h1 {
     height: 60vh;
     overflow:  scroll;
     margin: 12px;
+}
+.platos::-webkit-scrollbar{
+   display: none;
 }
 
 .infoPlatos {
@@ -209,13 +218,25 @@ button{
         justify-content: center;
         flex-direction: column;
     }
-
+    header{
+        justify-content: center;
+    }
+    .menu{
+        display: none;
+    }
+    h1 {
+        text-align: center;
+    }
+    .slogan {
+        text-align: center;
+    }
     .categorias {
         width: auto;
         height: 14.5vh;
     }
 
     .contenedorCategorias {
+        
         width: 209px;
         height: 140px;
     }
@@ -230,14 +251,37 @@ button{
     }
 
     .infoDetalle {
-        width: 26%;
+        width: 36%;
+
+    }
+    .infoDetalle p{
+        font-size: 1.5em;
+    }
+
+    .infoDetalle h4{
+        font-size: 1.5em;
     }
 
     .platos {
         width: 100%;
     }
 
+
     .infoPlatos {
         justify-content: center;
+    
+    }
+    .infoPlatos img{
+        width: 310px;
+        height: 150px;
+
+    }
+    .counter button {
+        width: 40px;
+        height: 40px;
+    }
+    .counter p {
+        width: 40px;
+        height: 40px;
     }
 }

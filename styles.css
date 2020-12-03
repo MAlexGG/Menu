@@ -9,7 +9,6 @@
 
 body {
     background-color: #FAFAFA;
-    margin-left: 2.5%;
 }
 
 header {
@@ -94,14 +93,13 @@ h1 {
 }
 
 .platos {
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: 60vh;
     overflow:  scroll;
     margin: 12px;
 }
 
 .infoPlatos {
-    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -170,9 +168,6 @@ footer {
     justify-content: space-around;
     height: auto;
     align-items: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
     background-color: whitesmoke;
 }
 button{
@@ -187,7 +182,7 @@ button{
 }
 
 .icoFooter img {
-    width: 30px;
+    width: 20px;
     opacity: 0.5;
 }
 
@@ -197,7 +192,7 @@ button{
     border-radius: 50%;
     border:none;
     background-color: #FF6B00;
-    box-shadow: 5px 8px 11px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.4);
     cursor: pointer;
     position: relative;
     top: -20px;
@@ -206,4 +201,43 @@ button{
 .icoSend img {
     width: 40px;
     filter: invert();
+}
+
+@media screen and (min-width: 768px){
+    main {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .categorias {
+        width: auto;
+        height: 14.5vh;
+    }
+
+    .contenedorCategorias {
+        width: 209px;
+        height: 140px;
+    }
+
+    .contenedorCategorias img {
+        width: 60%;
+        padding-top: 1%;
+    }
+
+    .contenedorCategorias p {
+        font-size: 117%;
+    }
+
+    .infoDetalle {
+        width: 26%;
+    }
+
+    .platos {
+        width: 100%;
+    }
+
+    .infoPlatos {
+        justify-content: center;
+    }
 }

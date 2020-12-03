@@ -3,11 +3,12 @@
 
 * {
     font-family: 'Montserrat', sans-serif;
+    margin:0;
+    padding: 0;
 }
 
 body {
     background-color: #FAFAFA;
-    margin-left: 2.5%;
 }
 
 header {
@@ -15,6 +16,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin: 10px 0;
 }
 
 .logo {
@@ -42,17 +44,18 @@ p{
 }
 
 h1 {
-    margin-top: 5%;
+    margin: 10px 0;
 }
 
 .categorias {
     display: inline-block;
     width: 100vw;
     height: 13vh;
-    overflow-x: scroll;
-    overflow-y: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
     white-space: nowrap;
     scrollbar-width: none;
+    padding: 10px 0;
 }
 
 .contenedorCategorias {
@@ -90,16 +93,13 @@ h1 {
 }
 
 .platos {
-    width: 100%;
-    height: 50vh;
+    width: auto;
+    height: 60vh;
     overflow:  scroll;
-    scrollbar-width: none;
-    margin-top: 1%;
-    margin-left: 3.5%;
+    margin: 12px;
 }
 
 .infoPlatos {
-    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -166,39 +166,78 @@ h4 {
 footer {
     display: flex;
     justify-content: space-around;
-    height: 85px;
-    align-items: flex-end;
+    height: auto;
+    align-items: center;
+    background-color: whitesmoke;
 }
-
+button{
+    outline: none;
+}
 .icoFooter {
-    width: 30px;
-    height: 30px;
     display: flex;
-    justify-content:center;
     background-color: transparent;
     border: none;
     cursor: pointer;
+    padding: 10px;
 }
 
 .icoFooter img {
     width: 20px;
-    height: auto;
     opacity: 0.5;
 }
 
 .icoSend {
-    width: 60px;
-    height: 60px;
+    width: 65px;
+    height: 65px;
     border-radius: 50%;
     border:none;
     background-color: #FF6B00;
-    box-shadow: 5px 8px 11px rgba(0, 0, 0, 0.4);
-    align-self: flex-start;
+    box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.4);
     cursor: pointer;
+    position: relative;
+    top: -20px;
 }
 
 .icoSend img {
-    width: 30px;
-    height: auto;
-    -webkit-filter: invert();
+    width: 40px;
+    filter: invert();
+}
+
+@media screen and (min-width: 768px){
+    main {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .categorias {
+        width: auto;
+        height: 14.5vh;
+    }
+
+    .contenedorCategorias {
+        width: 209px;
+        height: 140px;
+    }
+
+    .contenedorCategorias img {
+        width: 60%;
+        padding-top: 1%;
+    }
+
+    .contenedorCategorias p {
+        font-size: 117%;
+    }
+
+    .infoDetalle {
+        width: 26%;
+    }
+
+    .platos {
+        width: 100%;
+    }
+
+    .infoPlatos {
+        justify-content: center;
+    }
 }

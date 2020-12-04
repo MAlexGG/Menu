@@ -143,7 +143,7 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    height: 260px;
+    height: 30vh;
     background-color: #FF6B00;
     border-radius: 33px  33px  0px 0px;
     justify-content: space-around;
@@ -153,13 +153,12 @@ footer {
 .text{
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     width: 50vw;
 
 
 }
 .text p{
-    width: 50%;
     height: auto;
     color: #FBE2A1;
     opacity: (0.5);
@@ -173,15 +172,14 @@ footer {
    
 }
 .subtotal p{
-    width: 50%;
     height: auto;
     color: #FBE2A1;
     font-weight: 600;
 }
 
 .envio {
-    width: 320px;
-    height: 50px;
+    width: 70%;
+    height: 20%;
     border-radius:10px ;
     background-color: white;
     border: none;

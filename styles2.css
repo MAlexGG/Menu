@@ -12,27 +12,49 @@ body {
 header {
     display: flex;
     flex-direction: row;
-    
-    
-    
+    justify-content:space-between ;
+    padding: 2%;
 }
-nav {
-    display: flex;
-    width: 100px;
-    height: auto;
-    justify-content: space-between;
    
-   
-}
 .back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width:40px;
-    height: auto;
+    height: 40px;
+    border:none;
+    background-color: #F0F0F2;
+    border-radius: 2px;
     
+}
+.flech {
+    width: 80%;
+    height: auto;
+}
+
+.del{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:40px;
+    height: 40px;
+    border:none;
+    background-color: transparent;
+ 
 }
 .basura {
-    width:40px;
+    width:80%;
     height: auto;
     
+}
+
+h3 {
+    padding:5%;
+}
+
+.price {
+    color: #FF6B00;
+    font-weight: 600;
 }
 
 .platos {
@@ -41,6 +63,10 @@ nav {
     overflow:  scroll;
    
 }
+.platos::-webkit-scrollbar{
+   display: none;
+}
+
 .infoPlatos {
     display: flex;
     flex-direction: row;
@@ -48,16 +74,28 @@ nav {
     margin-bottom: 2vh;
     padding-left: 5%;
 }
-.image {
-    width: 10vw;
-    height: auto;
 
-}.infoDetalle {
-    margin-left: 3%;
+
+.image {
+    width: 118px;
+    height: 123px;
+    border-radius: 18px;
+    object-fit: cover;
+    cursor: pointer;
 }
+
+.infoDetalle {
+    margin-left: 7%;
+}
+
 .infoDetalle p{
     margin: 6px;
 }
+
+h4 {
+    margin: 4px;
+}
+
 .counter {
     display: flex;
     flex-direction: row;
@@ -74,4 +112,79 @@ nav {
     padding: 0px;
     font-weight: 600;
     cursor: pointer;
+}
+
+.counterLeft {
+    border-radius: 2px 0px 0px 2px;
+}
+
+.counterRight {
+    border-radius: 0px 2px 2px 0px;
+}
+
+.counter p {
+    width: 30px;
+    height: 30px;
+    background-color: #F0F0F2;
+    color: black;
+    margin: 0px;
+    text-align: center;
+    line-height: 28px;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+
+
+.total {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 260px;
+    background-color: #FF6B00;
+    border-radius: 33px  33px  0px 0px;
+    justify-content: space-around;
+    align-content: center;
+
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+
+}
+.text p{
+    width: 50%;
+    height: auto;
+    color: #FBE2A1;
+    opacity: (0.5);
+}
+
+.subtotal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:50vw;
+   
+}
+.subtotal p{
+    width: 50%;
+    height: auto;
+    color: #FBE2A1;
+    font-weight: 600;
+}
+
+.envio {
+    width: 320px;
+    height: 50px;
+    border-radius:10px ;
+    background-color: white;
+    border: none;
+    font-weight: 600;
+    color:black;
+    margin-top: 10%;
 }

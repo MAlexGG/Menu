@@ -57,7 +57,6 @@ nav {
 .categorias {
     display: inline-block;
     width: 100vw;
-    
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
@@ -181,6 +180,7 @@ h4 {
 footer {
     display: flex;
     justify-content: space-around;
+    width: 100%;
     height: auto;
     align-items: center;
     background-color: whitesmoke;
@@ -247,7 +247,6 @@ button{
     }
 
     .contenedorCategorias {
-        
         width: 209px;
         height: 140px;
     }
